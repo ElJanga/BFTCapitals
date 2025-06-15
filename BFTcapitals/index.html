@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFT Capitals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="container navbar-flex">
+                <div class="logo">
+                    <img src="logoW.PNG" alt="BFT Capitals Logo" class="logo-img">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section class="hero-section">
+            <div class="hero-bg-image"></div>
+            <div class="hero-content">
+                <h1>Leading <span class="highlight">Bitcoin</span> Intelligence Firm <span class="dot">.</span></h1>
+                <h2>Redefining Multi-Market Finance And Asset Management</h2>
+                <div class="hero-desc-box">
+                  <p>Based in Nigeria, we champion financial sovereignty through Bitcoin education, market intelligence, and accessible wealth systems, focused on the future.</p>
+                </div>
+                <a href="#" class="hero-btn">Learn More</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Live Market Data -->
+    <section class="market-section">
+        <h2 class="market-title">Live Bitcoin Price (USD)</h2>
+        <div class="live-price-container">
+            <i class="fab fa-bitcoin"></i>
+            <div class="price-display">
+                <span id="btc-price">Loading...</span>
+                <span id="price-change" class="price-change"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="market-card redesigned-market-card">
+                <div class="market-chart-full">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                      <div id="tradingview_btc_chart"></div>
+                      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                      <script type="text/javascript">
+                      new TradingView.widget({
+                        "width": "100%",
+                        "height": 320,
+                        "symbol": "BINANCE:BTCUSDT",
+                        "interval": "30",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "locale": "en",
+                        "toolbar_bg": "#23262f",
+                        "enable_publishing": false,
+                        "hide_top_toolbar": false,
+                        "hide_legend": false,
+                        "save_image": false,
+                        "container_id": "tradingview_btc_chart"
+                      });
+                      </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+                <div class="market-stats-grid">
+                    <div class="market-stat"><span>Market Cap</span><strong>$2.21T</strong></div>
+                    <div class="market-stat"><span>Volume (24H)</span><strong>$84.02B</strong></div>
+                    <div class="market-stat"><span>Vol/Mkt Cap (24H)</span><strong>3.79%</strong></div>
+                    <div class="market-stat"><span>Max Supply</span><strong>21M BTC</strong></div>
+                    <div class="market-stat"><span>FDV</span><strong>$2.2T</strong></div>
+                    <div class="market-stat"><span>Total Supply</span><strong>19.86M BTC</strong></div>
+                    <div class="market-stat"><span>Circulating Supply</span><strong>19.86M BTC</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="mission-section mission-image-style">
+      <div class="mission-row">
+        <div class="mission-heading-block">
+          <h2 class="mission-main-title">Our<br>Mission</h2>
+        </div>
+        <div class="mission-statement-box">
+          <div class="mission-statement-border"></div>
+          <div class="mission-statement-text">
+            Our mission at Bafta Capitals is to promote early inclusion in the global Bitcoin revolution while building systems that preserve wealth, educate communities, and help Africa rise through financial independence.
+          </div>
+        </div>
+      </div>
+      <div class="mission-standfor-row">
+        <div class="mission-standfor-title-wrap">
+          <div class="mission-standfor-line"></div>
+          <div class="mission-standfor-title">What We Stand For</div>
+          <div class="mission-standfor-line"></div>
+        </div>
+        <div class="mission-standfor-cards">
+          <div class="mission-standfor-card">
+            <img src="img1.jpg" alt="Bitcoin for the People">
+            <div class="mission-standfor-card-title">BITCOIN FOR THE PEOPLE</div>
+            <div class="mission-standfor-card-desc">We advocate for Bitcoin adoption as a tool for long-term financial freedom, especially in underserved economies.</div>
+          </div>
+          <div class="mission-standfor-card">
+            <img src="img2.jpg" alt="Accessible Wealth Structures">
+            <div class="mission-standfor-card-title">ACCESSIBLE WEALTH STRUCTURES</div>
+            <div class="mission-standfor-card-desc">We develop transparent and multi-market systems to help people store, grow, and protect their value.</div>
+          </div>
+          <div class="mission-standfor-card">
+            <img src="img3.jpg" alt="Financial Education & Awareness">
+            <div class="mission-standfor-card-title">FINANCIAL EDUCATION & AWARENESS</div>
+            <div class="mission-standfor-card-desc">Through media, events, and thought leadership, we demystify emerging finance for individuals, families, and institutions.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+      <div class="vision-overlay"></div>
+      <div class="vision-content">
+        <div class="vision-title">The Vision Begins...</div>
+        <div class="vision-main">BITCOIN ACCEPTANCE MOVEMENT PROJECT</div>
+        <div class="vision-desc">
+          This initiative is focused on driving Bitcoin adoption across Africa. Our goal is to make Bitcoin accessible, trusted, and usable for everyday Africa—positioning BFT Capitals as the continent's gateway into the global Bitcoin economy.
+        </div>
+        <div class="vision-powered">-Powered by BFT Capitals</div>
+      </div>
+    </section>
+
+    <!-- Why it Matters / Project Section -->
+    <section class="why-section why-image-style">
+      <div class="why-row">
+        <div class="why-heading-block">
+          <h2 class="why-main-title">Why It<br>Matters</h2>
+        </div>
+        <div class="why-statement-box">
+          <div class="why-statement-border"></div>
+          <div class="why-statement-text">
+            Africa is rising. But without control over our money, we can't control our future.<br>
+            <b>Bitcoin is not just a coin — it's a movement, a system, and a hedge.</b><br>
+            We're here to help our people understand it, own it, and use it well.
+          </div>
+        </div>
+      </div>
+      <div class="leadership-row">
+        <div class="leadership-title-wrap">
+          <div class="leadership-line"></div>
+          <div class="leadership-title">Meet Our Leadership</div>
+          <div class="leadership-line"></div>
+        </div>
+        <div class="leadership-desc">
+          With half a decade of experience in crypto and blockchain technology, our team combines industry expertise with professional investment management to lead BFT Capital's Mission of a strong Bitcoin-driven future.
+        </div>
+        <div class="leadership-cards">
+          <div class="leadership-card">
+            <img src="team1.jpg" alt="Zubairu Muhammad Bello">
+            <div class="leadership-name">Zubairu Muhammad Bello</div>
+            <div class="leadership-role">Brand Strategist.</div>
+          </div>
+          <div class="leadership-card">
+            <img src="team2.jpg" alt="Ahmed Ibrahim Saminaka">
+            <div class="leadership-name">Ahmed Ibrahim Saminaka</div>
+            <div class="leadership-role">Chief Operation Officer</div>
+          </div>
+          <div class="leadership-card">
+            <img src="team3.jpg" alt="Abdul'aziz Abdullahi">
+            <div class="leadership-name">Abdul'aziz Abdullahi</div>
+            <div class="leadership-role">Operations strategy lead</div>
+          </div>
+          <div class="leadership-card">
+            <img src="team4.jpg" alt="Usman Garba">
+            <div class="leadership-name">Usman Garba</div>
+            <div class="leadership-role">Chief Investment officer</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <div class="blog-title-wrap">
+        <div class="blog-line"></div>
+        <div class="blog-title">Blog Posts</div>
+        <div class="blog-line"></div>
+      </div>
+      <div class="blog-cards">
+        <div class="blog-card">
+          <img src="blog1.jpg" alt="Bitcoin: The Future of Finance or Just a Trend?">
+          <div class="blog-card-title">Bitcoin: The Future of Finance or Just a Trend?</div>
+          <div class="blog-card-meta">
+            <span class="blog-card-author">by Muhammad</span>
+            <span class="blog-card-time">1h ago</span>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="blog2.jpg" alt="How Bitcoin is Changing the Way We Think About Money">
+          <div class="blog-card-title">How Bitcoin is Changing the Way We Think About Money</div>
+          <div class="blog-card-meta">
+            <span class="blog-card-author">by Muhammad</span>
+            <span class="blog-card-time">1h ago</span>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="blog3.jpg" alt="The Rise of Bitcoin: What Every Investor Should Know">
+          <div class="blog-card-title">The Rise of Bitcoin: What Every Investor Should Know</div>
+          <div class="blog-card-meta">
+            <span class="blog-card-author">by Muhammad</span>
+            <span class="blog-card-time">1h ago</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <img src="Bafta-–-Figma-06-09-2025_02_48_PM.png" alt="Gallery" class="gallery-img">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-redesign">
+      <div class="footer-main">
+        <div class="footer-col footer-logo-col">
+          <img src="logoW.PNG" alt="BFT Capitals Logo" class="footer-logo-img">
+        </div>
+        <div class="footer-col footer-links-col">
+          <div class="footer-links-group">
+            <div class="footer-links-title">Ecosystem</div>
+            <a href="#">Community</a>
+            <a href="#">Showcase</a>
+            <a href="#">Contributing</a>
+          </div>
+          <div class="footer-links-group">
+            <div class="footer-links-title">About</div>
+            <a href="#">Events</a>
+            <a href="#">Projects</a>
+            <a href="#">Partner with us!</a>
+          </div>
+        </div>
+        <div class="footer-col footer-newsletter-col">
+          <div class="footer-newsletter-title">Let's keep in Touch</div>
+          <div class="footer-newsletter-desc">
+            Enter your email to get the latest updates on our projects.
+          </div>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-social-row">
+        <a href="#" class="footer-social-icon"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="footer-social-icon"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-copy-redesign">
+        Bafta Caitals. Copyright © 2025. All Rights Reserved
+      </div>
+    </footer>
+
+    <script>
+        // Function to format number with commas
+        function formatNumber(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        // Function to update price with animation
+        function updatePrice(newPrice, change) {
+            const priceElement = document.getElementById('btc-price');
+            const changeElement = document.getElementById('price-change');
+            
+            // Format the price
+            const formattedPrice = '$' + formatNumber(newPrice.toFixed(2));
+            
+            // Update price with animation
+            priceElement.style.opacity = '0';
+            setTimeout(() => {
+                priceElement.textContent = formattedPrice;
+                priceElement.style.opacity = '1';
+            }, 200);
+
+            // Update price change
+            if (change !== undefined) {
+                const changeValue = change.toFixed(2);
+                const changeText = changeValue >= 0 ? `+${changeValue}%` : `${changeValue}%`;
+                changeElement.textContent = changeText;
+                changeElement.className = 'price-change ' + (changeValue >= 0 ? 'positive' : 'negative');
+            }
+        }
+
+        // Function to fetch Bitcoin price
+        async function fetchBitcoinPrice() {
+            try {
+                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true');
+                const data = await response.json();
+                
+                if (data.bitcoin) {
+                    updatePrice(data.bitcoin.usd, data.bitcoin.usd_24h_change);
+                }
+            } catch (error) {
+                console.error('Error fetching Bitcoin price:', error);
+            }
+        }
+
+        // Fetch price immediately and then every 30 seconds
+        fetchBitcoinPrice();
+        setInterval(fetchBitcoinPrice, 30000);
+    </script>
+</body>
+</html>
